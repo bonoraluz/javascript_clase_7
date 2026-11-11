@@ -1,0 +1,159 @@
+/* ============================================
+   RESET Y BASE
+============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #333;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #a83232;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #a83232;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIOS E INPUTS */
+
+input,
+select {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #e9a23b;
+}
+
+/* BOTONES */
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #a83232;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7e2222;
+}
+
+/* CARDS */
+
+#contenedor-pizzas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card-pizza {
+    background-color: #fff8ef;
+    border: 1px solid #ead9c6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-pizza h3 {
+    color: #a83232;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card-pizza p {
+    margin: 10px 0;
+}
+
+.btn-eliminar {
+    background-color: #777;
+}
+
+.btn-eliminar:hover {
+    background-color: #444;
+}
+
+/* MENSAJES */
+
+#mensaje {
+    color: #278044;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 20px;
+    color: #a83232;
+}
+
+footer {
+    background-color: #a83232;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pizzería</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🍕 Michi-pizzería 🐱</h1>
+        <p>Panel de cocineros:</p>
+        <p>Proponé acá las próximas pizzas del mes</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Agregá una nueva pizza del mes:</h2>
+
+            <form id="form-pizza">
+                <input
+                    type="text"
+                    id="variedad"
+                    placeholder="Nombre de la pizza"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="precio"
+                    placeholder="Precio"
+                    min="1"
+                    required
+                >
+
+                <select id="tacc" required>
+                    <option value="">Seleccionar TACC</option>
+                    <option value="Tiene TACC">Tiene TACC</option>
+                    <option value="Sin TACC">Sin TACC</option>
+                </select>
+
+                <button type="submit">Agregar pizza</button>
+            </form>
+
+            <p id="mensaje"></p>
+        </section>
+
+        <section>
+            <h2>Nuestro menú del mes:</h2>
+            <p></p>
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar una pizza..."
+            >
+
+            <button id="btn-todas">Todas las pizzas</button>
+            <button id="btn-sin-tacc">Pizzas sin TACC</button>
+
+            <div id="contenedor-pizzas"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>by Luz Bonora</p>
+    </footer>
+
+</body>
+</html>
